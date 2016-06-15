@@ -1,0 +1,232 @@
+.Background {
+     -fx-background-image: url("backMp3Ukrv3.png");
+   }
+.BackgroundEx {
+     -fx-background-image: url("backMp3UkrExv3.png");
+   }
+.btn_Play{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnPlayUkr.png");
+   }
+.btn_Play:hover {
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnPlayUkrHover.png");
+   }
+.btn_Equalizer{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnEqualizerUkr.png");
+   }
+   .btn_Equalizer:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnEqualizerUkrHover.png");
+      }
+
+.btn_Pause{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnPauseUkr.png");
+   }
+   .btn_Pause:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnPauseUkrHover.png");
+      }
+.btn_Forward{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnForwardUkr.png");
+   }
+   .btn_Forward:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnForwardUkrHover.png");
+      }
+.btn_Rewind{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnRewindUkr.png");
+   }
+   .btn_Rewind:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnRewindUkrHover.png");
+      }
+.btn_Reload{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnReloadUkr.png");
+   }
+   .btn_Reload:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnReloadUkrHover.png");
+      }
+.btn_Upload{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnUploadUkr.png");
+   }
+   .btn_Upload:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnUploadUkrHover.png");
+      }
+
+.btn_Previous{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnPreviousUkr.png");
+   }
+   .btn_Previous:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnPreviousUkrHover.png");
+      }
+ .btn_Plus{
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnPlusUkr.png");
+      }
+      .btn_Plus:hover {
+              -fx-background-color: transparent;
+              -fx-background-image: url("btnPlusUkrHover.png");
+            }
+
+.btn_Next{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnNextUkr.png");
+   }
+   .btn_Next:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnNextUkrHover.png");
+      }
+.btn_Stop{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnStopUkr.png");
+   }
+   .btn_Stop:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnStopUkrHover.png");
+      }
+.btn_VolUp{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnVolUpUkr.png");
+   }
+   .btn_VolUp:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnVolUpUkrHover.png");
+      }
+.btn_Settings{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnGerbUkr.png");
+   }
+   .btn_Settings:hover{
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnGerbUkrHover.png");
+      }
+.btn_Playlist{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnPlaylistUkr.png");
+   }
+   .btn_Playlist:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnPlaylistUkrHover.png");
+      }
+.btn_PlaylistEx {
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnPlaylistUkrHover.png");
+   }
+   .btn_PlaylistEx:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnPlaylistUkr.png");
+      }
+
+.btn_Close{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnCloseUkr25x25.png");
+   }
+   .btn_Close:hover{
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnCloseUkr25x25Hover.png");
+      }
+.btn_Hide{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnHideUkr25x25.png");
+   }
+   .btn_Hide:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnHideUkr25x25Hover.png");
+      }
+.btn_Delete{
+     -fx-background-color: transparent;
+     -fx-background-image: url("btnDeleteUkr.png");
+   }
+   .btn_Delete:hover {
+        -fx-background-color: transparent;
+        -fx-background-image: url("btnDeleteUkrHover.png");
+      }
+.LabelSong{
+-fx-text-fill:#7c6659
+}
+.LabelTime{
+-fx-text-fill:#7c6659
+}
+
+
+.progress-bar .bar {
+    -fx-padding: 6px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 2;
+   -fx-background-color: transparent;
+   -fx-background-image: url("ProgressBar.png");
+}
+.table-view {
+
+
+    -fx-control-inner-background: transparent;
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+
+}
+.table-view .scroll-bar {
+    -fx-background-color: transparent;
+}
+.table-view .filler{
+-fx-background-color: transparent;}
+
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: #7c6659;
+    -fx-border-color:
+        transparent
+        transparent
+        #7c6659
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #7c6659;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #9d8d74;
+   
+}
+.table-view .table-cell{
+    -fx-text-fill: #52381e;
+}
+
+
+.sliderS .thumb{
+-fx-background-color:transparent;
+    -fx-background-image: url("sliderThumbUkrv2.png");
+    -fx-padding: 10;
+}
+.sliderS .track{
+        -fx-padding:2px;
+        -fx-background-insets: 0;
+        -fx-background-radius: 5 0 5 0;
+
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="500.0" styleClass="Background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.MainWController">
+   <children>
+      <Button fx:id="btn_rewind" layoutX="22.0" layoutY="72.0" mnemonicParsing="false" onAction="#ActionRewind" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Rewind" text="" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="68.0" />
+      <Button fx:id="btn_pause" layoutX="51.0" layoutY="100.0" mnemonicParsing="false" onAction="#ActionPause" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Pause" text="" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="96.0" />
+      <Button fx:id="btn_play" layoutX="50.0" layoutY="44.0" mnemonicParsing="false" onAction="#ActionPlay" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Play" text="" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="413.0" AnchorPane.topAnchor="40.0" />
+      <Button fx:id="btn_forward" layoutX="78.0" layoutY="72.0" mnemonicParsing="false" onAction="#ActionForward" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Forward" text="" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="68.0" />
+      <Button fx:id="btn_stop" layoutX="108.0" layoutY="98.0" mnemonicParsing="false" onAction="#ActionStop" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Stop" text="" AnchorPane.leftAnchor="106.0" AnchorPane.topAnchor="96.0" />
+      <Button fx:id="btn_loop" layoutX="161.0" layoutY="97.0" mnemonicParsing="false" onAction="#ActionLoop" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Reload" text="" AnchorPane.leftAnchor="162.0" AnchorPane.topAnchor="96.0" />
+      <Button fx:id="btn_previous" layoutX="133.0" layoutY="129.0" mnemonicParsing="false" onAction="#ActionPrevious" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Previous" text="" AnchorPane.leftAnchor="134.0" AnchorPane.topAnchor="124.0" />
+      <Button fx:id="btn_next" layoutX="194.0" layoutY="125.0" mnemonicParsing="false" onAction="#ActionNext" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Next" text="" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="124.0" />
+      <Button fx:id="btn_play332" layoutX="237.0" layoutY="97.0" mnemonicParsing="false" onAction="#ActionStyle" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Settings" text="" AnchorPane.leftAnchor="218.0" AnchorPane.topAnchor="96.0" />
+      <Button fx:id="btn_upload" layoutX="251.0" layoutY="131.0" mnemonicParsing="false" onAction="#ActionUpload" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Upload" text="" AnchorPane.leftAnchor="246.0" AnchorPane.topAnchor="124.0" />
+      <Button fx:id="btn_mute" layoutX="247.0" layoutY="107.0" mnemonicParsing="false" onAction="#ActionMute" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_VolUp" text="" AnchorPane.leftAnchor="274.0" AnchorPane.topAnchor="96.0" />
+      <Button fx:id="btn_playlist" layoutX="310.0" layoutY="124.0" mnemonicParsing="false" onAction="#ActionPlaylistOpen" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Playlist" text="" AnchorPane.leftAnchor="302.0" AnchorPane.topAnchor="124.0" />
+      <Button fx:id="btn_hide" cancelButton="true" layoutX="402.0" layoutY="14.0" mnemonicParsing="false" onAction="#ActionHide" prefHeight="25.0" prefWidth="25.0" styleClass="btn_Hide" text="" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="4.0" />
+      <Button fx:id="btn_exit" layoutX="449.0" layoutY="14.0" mnemonicParsing="false" onAction="#ActionExit" prefHeight="25.0" prefWidth="25.0" styleClass="btn_Close" text="" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0" />
+      <Slider fx:id="slider_sound" layoutX="321.0" layoutY="90.0" onMouseClicked="#ActionChangeVolumeClicked" onMouseDragged="#ActionChangeVolumeDragged" prefHeight="14.0" prefWidth="74.0" styleClass="sliderS" value="100.0" />
+      <ProgressBar fx:id="progress_bar" layoutX="114.0" layoutY="59.0" prefWidth="282.0" progress="0.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ProgressBar>
+      <Slider fx:id="slider_player" layoutX="114.0" layoutY="61.0" onMouseDragged="#ActionChangeMusicDragged" onMousePressed="#ActionChangeMusicClicked" opacity="0.0" prefHeight="14.0" prefWidth="282.0" AnchorPane.topAnchor="59.0" />
+      <Label fx:id="music_name_label" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="115.0" layoutY="34.0" prefHeight="25.0" prefWidth="298.0" styleClass="LabelSong" textFill="#75a7e4" AnchorPane.topAnchor="38.0">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="music_time_label" alignment="TOP_RIGHT" layoutX="398.0" layoutY="34.0" prefHeight="25.0" prefWidth="90.0" styleClass="LabelTime" textFill="#75a7e4" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="38.0" />
+   </children>
+</AnchorPane>
