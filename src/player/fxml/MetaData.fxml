@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="200.0" styleClass="Background" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.MetaData">
+   <children>
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="150.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="label_track" layoutX="8.0" layoutY="170.0" prefHeight="20.0" prefWidth="185.0" text="Трэк: Неизвестно">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="label_album" layoutX="8.0" layoutY="195.0" prefHeight="20.0" prefWidth="185.0" text="Альбом: Неизвестно">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="label_artist" layoutX="8.0" layoutY="220.0" prefHeight="20.0" prefWidth="185.0" text="Исполнитель: Неизвестно">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="label_year" layoutX="8.0" layoutY="245.0" prefHeight="20.0" prefWidth="185.0" text="Год: Неизвестно">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Button fx:id="btn_ok" layoutX="84.0" layoutY="265.0" mnemonicParsing="false" onAction="#ActionExit" text="OK" />
+   </children>
+</AnchorPane>
