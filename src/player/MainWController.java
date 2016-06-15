@@ -223,7 +223,8 @@ public class MainWController {
             stage.hide();
         }
         catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
     public void ActionStyle()

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import java.lang.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
@@ -15,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="BackgroundEx" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.MainWExController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="BackgroundEx" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.MainWExController">
    <children>
       <Button fx:id="btn_rewind" layoutX="22.0" layoutY="72.0" mnemonicParsing="false" onAction="#ActionRewind" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Rewind" text="" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="68.0" />
       <Button fx:id="btn_pause" layoutX="51.0" layoutY="100.0" mnemonicParsing="false" onAction="#ActionPause" prefHeight="37.0" prefWidth="37.0" rotate="-45.0" styleClass="btn_Pause" text="" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="96.0" />
@@ -48,7 +43,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </TableView>
-      <Button fx:id="btn_plus" layoutX="400.0" layoutY="449.0" mnemonicParsing="false" onAction="#ActionAdd" prefHeight="37.0" prefWidth="37.0" styleClass="btn_Equalizer" text="" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="50.0" />
+      <Button fx:id="btn_plus" layoutX="400.0" layoutY="449.0" mnemonicParsing="false" onAction="#ActionMetaData" prefHeight="37.0" prefWidth="37.0" styleClass="btn_Equalizer" text="" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="50.0" />
       <Button fx:id="btn_delete1" layoutX="444.0" layoutY="449.0" mnemonicParsing="false" onAction="#btn_delete" prefHeight="37.0" prefWidth="37.0" styleClass="btn_Delete" text="" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
       <Label fx:id="music_name_label" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="115.0" layoutY="34.0" prefHeight="25.0" prefWidth="298.0" styleClass="LabelSong" textFill="#75a7e4" AnchorPane.topAnchor="38.0">
          <font>

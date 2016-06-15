@@ -9,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
+import javafx.scene.media.AudioEqualizer;
+import javafx.scene.media.EqualizerBand;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.FileChooser;
@@ -171,6 +173,7 @@ public class MainWExController {
     Media current_music;
 
     static File current_file;
+    Stage MetaDataStage;
 
     static int music_index = 0;
     static int current_music_index = 0;
@@ -185,6 +188,7 @@ public class MainWExController {
     static boolean playing; // проверка на то играет музыка или нет
     static boolean StyleUkr; // проверка на то какой сейчас стиль
     static boolean Change;
+    static boolean metaData;
 
     private String stop_time;
     private String current_time;
@@ -518,6 +522,7 @@ public class MainWExController {
         try {
             mediaPlayer.pause();
             playing = false;
+            ExitMetaData();
 
         }
         catch (Exception e1){
@@ -972,6 +977,83 @@ public class MainWExController {
         btn_delete1.setTooltip(tooltip[13]);
         btn_plus.setTooltip(tooltip[14]);
         btn_plus1.setTooltip(tooltip[12]);
+
+    }
+
+
+    public void ActionEqualizer(){
+
+        /*System.out.println(mediaPlayer.getAudioEqualizer());
+        System.out.println(mediaPlayer.getAudioEqualizer().getBands());
+        System.out.println(mediaPlayer.getAudioEqualizer().isEnabled());
+        EqualizerBand e = new EqualizerBand();*/
+
+
+    }
+
+    public void ActionMetaData(){
+
+        try {
+
+            if(metaData == false) {
+
+            /*System.out.println(media.getMetadata());
+            System.out.println(media.getMetadata().get("image"));*/
+
+                Stage primaryStage2 = new Stage();
+
+                Stage stage = (Stage) btn_plus.getScene().getWindow();
+
+                primaryStage2.setX(stage.getX() + 505);
+                primaryStage2.setY(stage.getY());
+
+                Parent root = FXMLLoader.load(getClass().getResource("fxml/MetaData.fxml"));
+                primaryStage2.setTitle("Mp3Player");
+                Scene scene = new Scene(root);
+
+                primaryStage2.setScene(scene);
+                primaryStage2.initStyle(StageStyle.TRANSPARENT);
+                primaryStage2.setResizable(false);
+                primaryStage2.show();
+                scene.setOnMousePressed(event -> {
+                    xOffset = primaryStage2.getX() - event.getScreenX();
+                    yOffset = primaryStage2.getY() - event.getScreenY();
+                });
+                scene.setOnMouseDragged(event -> {
+                    primaryStage2.setX(event.getScreenX() + xOffset);
+                    primaryStage2.setY(event.getScreenY() + yOffset);
+                });
+
+                metaData = true;
+                MetaDataStage = primaryStage2;
+
+            }
+
+        }
+
+        catch (Exception e1){
+            //e1.printStackTrace();
+            System.out.println(e1);
+        }
+
+
+    }
+
+
+    public void ExitMetaData(){
+
+        try{
+
+            MetaDataStage.hide();
+            metaData = false;
+            MetaDataStage = null;
+
+        }
+
+        catch (Exception e){
+            System.out.println(e);
+            e.printStackTrace();
+        }
 
     }
 
